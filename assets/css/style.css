@@ -180,6 +180,116 @@ header .logo a {
     animation: top-down 2s ease-in-out infinite alternate-reverse;
 }
 
+/* about section */
+
+.heading-title h2 {
+    font-size: 32px;
+    color: #37517e;
+}
+
+.heading-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.heading-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+#about p i {
+    vertical-align: middle;
+    font-size: 16px;
+    color: #47b2e4;
+}
+
+.btn-outline-learn {
+    color: #47b2e4;
+    background-color: transparent;
+    border: 1px solid #47b2e4;
+    padding: 10px 35px;
+    transition: all 0.5s;
+}
+
+.btn-outline-learn:hover {
+    color: #fff;
+    background-color: #47b2e4;
+}
+
+/*end about section */
+
+/* collapse section */
+
+#sec-collapse {
+    background-color: #F3F5FA;
+}
+
+#sec-collapse .txt-container h3 {
+    font-size: 32px;
+    color: #37517e;
+}
+
+#sec-collapse .txt-container p {
+    font-size: 14px;
+    color: #848484;
+}
+
+.card-header {
+    background-color: #fff;
+    border: 0;
+}
+
+#sec-collapse .card {
+    border: 1px solid #dddc;
+    border-radius: 5px;
+}
+
+#sec-collapse .collapse-list button {
+    transition: color 0.5s;
+    font-size: 16px;
+}
+
+#sec-collapse .collapse-list button.collapsed {
+    color: #000;
+}
+
+#sec-collapse .collapse-list button span, #sec-collapse .collapse-list button, #sec-collapse .collapse-list button:hover {
+    color: #47b2e4;
+}
+
+#sec-collapse .btn:focus {
+    box-shadow: 0 0 0 transparent!important;
+}
+
+#sec-collapse .card-body {
+    padding: 5px 28px;
+}
+
+/*end collapse section */
+/* skills */
+.bg-progress{
+    background-color: #4668A2;
+}
+.text-progress{
+    color: #4668A2;
+}
+.progress{
+    border-radius: 0;
+    height: 10px;
+
+}
 @keyframes top-down {
     0% {
         transform: translateY(0px);
@@ -212,7 +322,6 @@ header .logo a {
         border-radius: 10px;
         animation: fadein 1s;
     }
-
     .navbar ul {
         flex-direction: column;
         justify-content: flex-start;
@@ -231,16 +340,16 @@ header .logo a {
         font-weight: 600;
         margin: 10px 0;
     }
-
     /*Navigation fade in animation*/
     @keyframes fadein {
-        0%{opacity: 0;}
-        100%{opacity: 1;}
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-
     /*End of Navigation bar*/
-
-    
     /*Home Section*/
     #home {
         height: 100vh;
@@ -303,12 +412,12 @@ header .logo a {
     transform: scale(1.1);
 }
 
-
 /*Media Query for Clients Section*/
+
 @media (max-width: 768px) {
     #cliens img {
-      max-width: 40%;
+        max-width: 40%;
     }
-  }
+}
 
 /*End of Clients Section*/

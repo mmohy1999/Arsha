@@ -1,5 +1,7 @@
 //Define navbar icon
 var navMenuIcon = document.getElementById('navMenuIcon');
+// Define collapse list
+var collapseList = Array.from(document.querySelectorAll('#sec-collapse .collapse-list button'));
 //add event click to navbar toggle
 navMenuIcon.addEventListener('click', toggleMenu);
 
@@ -30,4 +32,13 @@ $(window).on('load', function () {
 
 
 
-
+// onclick on collapse btn
+for (let i = 0; i < collapseList.length; i++) {
+    collapseList[i].addEventListener('click', () => {
+        let collapseIcon = collapseList[i].querySelector('i');
+        if ( collapseList[i].classList.contains('collapsed'))
+            collapseIcon.classList.replace('fa-sort-down', 'fa-sort-up')
+        else
+            collapseIcon.classList.replace('fa-sort-up', 'fa-sort-down')
+    })
+}
