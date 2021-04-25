@@ -210,7 +210,9 @@ header .logo a {
         display: block;
         margin: auto;
         border-radius: 10px;
+        animation: fadein 1s;
     }
+
     .navbar ul {
         flex-direction: column;
         justify-content: flex-start;
@@ -229,7 +231,16 @@ header .logo a {
         font-weight: 600;
         margin: 10px 0;
     }
+
+    /*Navigation fade in animation*/
+    @keyframes fadein {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+
     /*End of Navigation bar*/
+
+    
     /*Home Section*/
     #home {
         height: 100vh;
