@@ -1,9 +1,35 @@
 //Define navbar icon
 var navMenuIcon = document.getElementById('navMenuIcon');
+//Define Scroll To Top Btn
+var scrollBtn = document.querySelector('.scroll-to-top');
+
 // Define collapse list
 var collapseList = Array.from(document.querySelectorAll('#sec-collapse .collapse-list button'));
+
+
 //add event click to navbar toggle
 navMenuIcon.addEventListener('click', toggleMenu);
+
+//add event on scroll to scroll to top btn
+window.onscroll = function () { showScrollToTop() };
+
+//Function to show or hide scroll to top btn
+function showScrollToTop() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollBtn.style.display = "flex";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+}
+
+
+//Jquery onclick action to scroll to top smoothly
+
+$(".scroll-to-top").click(function () {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1500);
+});
 
 
 //function to open or close navbar 
@@ -19,7 +45,7 @@ function toggleMenu() {
 // Init AOS Animation
 function aos_init() {
     AOS.init({
-        duration: 1000,
+        duration: 1500,
         once: true
     });
 };
