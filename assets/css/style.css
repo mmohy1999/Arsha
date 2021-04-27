@@ -54,6 +54,37 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/*Page Loading*/
+.page-load{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #37517e;
+    z-index: 11111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-load span{
+    width: 50px;
+    height: 50px;
+    background: #37517e;
+    border-radius: 50%;
+    border: 5px solid #37517e;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    animation: loading 1s linear infinite ;
+}
+
+@keyframes loading {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+
+}
+
 
 /*Header*/
 

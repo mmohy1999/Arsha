@@ -7,6 +7,15 @@ var scrollBtn = document.querySelector('.scroll-to-top');
 var collapseList = Array.from(document.querySelectorAll('#sec-collapse .collapse-list button'));
 
 
+//Hide Loading when page is loaded
+$(window).on('load', () => {
+    if ($('.page-load').length) {
+      $('.page-load').delay(100).fadeOut('slow', ()=> {
+        $(this).remove();
+      });
+    }
+  });
+
 //add event click to navbar toggle
 navMenuIcon.addEventListener('click', toggleMenu);
 
