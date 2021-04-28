@@ -137,6 +137,7 @@ header .logo a {
 
 .navbar ul li a:hover, .navbar .active {
     color: #47b2e4;
+    transition: 0.3s;
 }
 
 /*End nav*/
