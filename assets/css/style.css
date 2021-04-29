@@ -575,3 +575,86 @@ header .logo a {
     transition: 0.5s;
 }
 /*End of portfolio*/
+
+
+/*Team Section*/
+
+.section-team{
+    background-color: rgb(245, 245, 245);
+}
+.section-title h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #37517e;
+    font-family: "Jost", sans-serif;
+    position: relative;
+}
+.section-title{
+    text-align: center;
+}
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    top:100%;
+    left: 44%;
+    width: 12%;
+    height: 1px;
+    background-color: rgb(216, 216, 216);
+}
+.section-title h2::before{
+    content: "";
+    position: absolute;
+    top:95%;
+    left: 48%;
+    width:4%;
+    height: 3px;
+    background-color:#47b2E4
+}
+.img-card{
+    background-color: transparent;
+    position: relative;
+    width: 40%;
+
+}
+.img-card img{
+    border-radius: 50%;
+    
+    width: 100%;
+}
+.member{
+    background:white;
+    margin-top: 10px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition-delay: .2s;
+   transition-duration: 1s ;
+   transition-property:bottom;
+}
+.member:hover{
+    bottom: 15px;
+}
+.content h4{
+    color: #37517e;
+}
+.media a{
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    background-color: rgb(235, 240, 255);
+    color:#37517e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*End Team Section*/
