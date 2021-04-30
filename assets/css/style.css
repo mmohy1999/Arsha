@@ -15,7 +15,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Jost", sans-serif;
 }
 
-
 .section-title h2 {
     font-size: 32px;
     color: #37517e;
@@ -43,19 +42,21 @@ h1, h2, h3, h4, h5, h6 {
     left: calc(50% - 20px);
 }
 
-.container{
+.container {
     max-width: 88%;
 }
 
 /*Media Query for General Styles*/
+
 @media screen and (max-width:575px) {
-   .container {
+    .container {
         max-width: 100%;
     }
 }
 
 /*Page Loading*/
-.page-load{
+
+.page-load {
     position: fixed;
     top: 0;
     left: 0;
@@ -68,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.page-load span{
+.page-load span {
     width: 50px;
     height: 50px;
     background: #37517e;
@@ -76,15 +77,17 @@ h1, h2, h3, h4, h5, h6 {
     border: 5px solid #37517e;
     border-left-color: #fff;
     border-right-color: #fff;
-    animation: loading 1s linear infinite ;
+    animation: loading 1s linear infinite;
 }
 
 @keyframes loading {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
-
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
-
 
 /*Header*/
 
@@ -250,7 +253,6 @@ header .logo a {
     animation: top-down 2s ease-in-out infinite alternate-reverse;
 }
 
-
 @keyframes top-down {
     0% {
         transform: translateY(0px);
@@ -353,7 +355,6 @@ header .logo a {
         width: 100%;
         padding-left: 0;
         padding-right: 0;
-      
     }
     #home img {
         width: 80%;
@@ -362,9 +363,8 @@ header .logo a {
 
 /*End Home Section*/
 
-
-
 /*Scroll To Top Icon*/
+
 .scroll-to-top {
     position: fixed;
     bottom: 0;
@@ -384,7 +384,6 @@ header .logo a {
 .scroll-to-top i {
     font-size: 25px;
 }
-
 
 /*Clients Section*/
 
@@ -410,10 +409,7 @@ header .logo a {
 
 /*End of Clients Section*/
 
-
 /* about section */
-
-
 
 #about p i {
     vertical-align: middle;
@@ -435,17 +431,14 @@ header .logo a {
     background-color: #47b2e4;
 }
 
-
 @media screen and (max-width:575px) {
-   #about .txt-container {
-        padding:35px 0 0 0;
-     }
-
-    #about .txt-container.learn-more{
-        padding:25px 0 0 0;
-        
+    #about .txt-container {
+        padding: 35px 0 0 0;
     }
- }
+    #about .txt-container.learn-more {
+        padding: 25px 0 0 0;
+    }
+}
 
 /*end about section */
 
@@ -498,24 +491,77 @@ header .logo a {
 
 /*end collapse section */
 
-
 /* skills */
-.bg-progress{
+
+.bg-progress {
     background-color: #4668A2;
 }
-.text-progress{
+
+.text-progress {
     color: #4668A2;
 }
-.progress{
+
+.progress {
     border-radius: 0;
     height: 10px;
-
 }
+
+/*Services Section*/
+
+#services {
+    background-color: #f3f5fa;
+    padding-bottom: 25px;
+}
+
+#services .service-item {
+    box-shadow: 0px 0 10px 0 rgb(0 0 0 / 10%);
+    padding: 50px 30px;
+    background: #fff;
+    transform: translateY(0);
+    transition: 1s;
+    height: 100%;
+}
+
+#services .service-item h3 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+#services .service-item p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#services .service-item i {
+    color: #47b2e4;
+    font-size: 30px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+#services .service-item a {
+    color: #37517e;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#services .service-item:hover {
+    transform: translateY(-10px);
+}
+
+#services .service-item:hover a {
+    color: #47b2e4;
+}
+
+/*End Of Services Section*/
+
 /*Portfolio*/
-.nav-item{
+
+.nav-item {
     margin: 8px 5px;
 }
-.nav-pills .nav-link{  
+
+.nav-pills .nav-link {
     color: #444444;
     border-radius: 30px;
     padding: 3px 20px;
@@ -523,84 +569,95 @@ header .logo a {
     font-family: "Poppins", sans-serif;
     transition: 0.3s all;
 }
-.nav-pills .nav-link:hover{
+
+.nav-pills .nav-link:hover {
     color: #fff;
     background-color: #47B2E4;
 }
-.nav-pills .nav-link.active{  
+
+.nav-pills .nav-link.active {
     color: #fff;
     background-color: #47B2E4;
 }
-.overlay{
-  opacity: 0;
-  left: 0;
-  right: 0;
-  bottom: -15px;
-  transition: all ease-in-out 0.3s;
-  background: rgba(55, 81, 126, 0.8);
-  padding: 10px 15px;
-  color:#fff;
+
+.overlay {
+    opacity: 0;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    transition: all ease-in-out 0.3s;
+    background: rgba(55, 81, 126, 0.8);
+    padding: 10px 15px;
+    color: #fff;
 }
-.heading-portfolio h4{
+
+.heading-portfolio h4 {
     font-size: 18px;
     font-weight: 600;
 }
-.heading-portfolio p{
+
+.heading-portfolio p {
     font-size: 15px;
 }
-.item-1:hover .overlay{
+
+.item-1:hover .overlay {
     opacity: 1;
 }
-.item-1:hover img{
+
+.item-1:hover img {
     transform: scale(1.2);
 }
-.icons-portfolio{
+
+.icons-portfolio {
     position: relative;
     top: 15px;
 }
-.icons-portfolio a{
+
+.icons-portfolio a {
     color: #fff;
     padding-right: 6px;
     transition: 0.3s;
 }
-.icons-portfolio a:hover{
+
+.icons-portfolio a:hover {
     color: #4074ce;
 }
-.items-portfolio{
+
+.items-portfolio {
     padding: 10px;
     padding-right: 15px;
     overflow: hidden;
 }
-#portfolio img{
+
+#portfolio img {
     transition: 0.5s;
 }
 
-
 /*End of portfolio*/
-
 
 /*Team Section*/
 
-.section-team{
+.section-team {
     background-color: rgb(245, 245, 245);
 }
 
-.img-card{
+.img-card {
     background-color: transparent;
     position: relative;
     width: 50%;
 }
-.img-card img{
+
+.img-card img {
     border-radius: 50%;
     width: 100%;
 }
 
-.section-team .content{
+.section-team .content {
     padding: 15px;
 }
-.member{
 
-    background:white;
+.member {
+    background: white;
     margin-top: 10px;
     padding: 30px;
     border-radius: 5px;
@@ -610,37 +667,38 @@ header .logo a {
     right: 0;
     left: 0;
     transition-delay: .2s;
-   transition-duration: 1s ;
-   transition-property:bottom;
+    transition-duration: 1s;
+    transition-property: bottom;
 }
-.member:hover{
+
+.member:hover {
     bottom: 15px;
 }
-.content h4{
+
+.content h4 {
     color: #37517e;
 }
 
-.content p{
+.content p {
     font-size: 14px;
     width: 100%;
 }
-.media a{
+
+.media a {
     width: 30px;
     height: 30px;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: rgb(235, 240, 255);
-    color:#37517e;
+    color: #37517e;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@media screen and (max-width:600px){
-    .img-card{
+@media screen and (max-width:600px) {
+    .img-card {
         width: 90%;
     }
-    
 }
-
 
 /*End Team Section*/
