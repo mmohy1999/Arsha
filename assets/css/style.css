@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 /*Media Query for General Styles*/
 @media screen and (max-width:575px) {
    .container {
-        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -575,12 +575,7 @@ header .logo a {
     transition: 0.5s;
 }
 
-@media screen and (max-width:600px){
-    .portfolio-section .container{
-        max-width: 100%;
-    }
-    
-}
+
 /*End of portfolio*/
 
 
@@ -593,12 +588,10 @@ header .logo a {
 .img-card{
     background-color: transparent;
     position: relative;
-    width: 80%;
-    padding-top: 15px;
+    width: 50%;
 }
 .img-card img{
     border-radius: 50%;
-    height: auto;
     width: 100%;
 }
 
@@ -606,6 +599,7 @@ header .logo a {
     padding: 15px;
 }
 .member{
+
     background:white;
     margin-top: 10px;
     padding: 30px;
@@ -625,6 +619,11 @@ header .logo a {
 .content h4{
     color: #37517e;
 }
+
+.content p{
+    font-size: 14px;
+    width: 100%;
+}
 .media a{
     width: 30px;
     height: 30px;
@@ -634,6 +633,13 @@ header .logo a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width:600px){
+    .img-card{
+        width: 90%;
+    }
+    
 }
 
 
